@@ -1,0 +1,58 @@
+.section-hero {
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/17.jpg");
+    padding: 200px 0;
+    margin: 0 auto;
+}
+
+.hero-container {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+
+}
+
+.hero-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 716px;
+}
+
+.hero-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background: var(--hover-focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    padding: 10px 32px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+}
+
+.hero-button {
+    &:hover {
+        background-color: var(--btn-hover-focus-color);
+    }
+
+    &:focus {
+        background-color: var(--btn-hover-focus-color);
+    }
+}
