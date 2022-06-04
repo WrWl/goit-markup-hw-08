@@ -1,23 +1,63 @@
 .section-hero {
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/17.jpg");
-    padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob.jpg");
+    padding: 118px 0;
+    margin: 0 ;
     margin: 0 auto;
+   background-position: center;
+   background-size:  cover;
+   background-repeat: no-repeat;
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution:192dpi),
+   (min-resolution: 2dppx){
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url("../images/hero-mob-x2.jpg");
+   }
+   @media screen and (min-width:768px){
+    background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url("../images/hero-tabl.jpg");
+    @media (min-device-pixel-ratio: 2),
+   (min-resolution:192dpi),
+   (min-resolution: 2dppx) {
+       background-image:
+           linear-gradient(rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)),
+           url("../images/hero-tabl-x2.jpg");
+   }
+   }
+        @media screen and (min-width:1200px) {
+            padding: 200px 0;
+            background-image:
+                    linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url("../images/hero-desk.jpg");
+                    @media (min-device-pixel-ratio: 2),
+                        (min-resolution:192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image:
+                                linear-gradient(rgba(47, 48, 58, 0.4),
+                                    rgba(47, 48, 58, 0.4)),
+                                url("../images/hero-desk-x2.jpg");
+                        }
 }
 
 .hero-container {
-
     display: flex;
     flex-direction: column;
     align-self: center;
-
+    
+}
 
 }
 
 .hero-text {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 42px;  
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -25,6 +65,10 @@
     margin: 0 auto;
     margin-bottom: 30px;
     max-width: 716px;
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero-button {
@@ -45,6 +89,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        line-height: 1.88;
+        }
 }
 
 .hero-button {

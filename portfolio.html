@@ -18,6 +18,11 @@
     <div class="container">
         <a href="./index.html" class=" logo header__logo link">
             <span class="logo__span">Web</span>Studio</a>
+            <button type="button" class="mob-open-btn">
+                <svg class="menu-open-icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link link " href="./index.html">Студия</a></li>
@@ -40,21 +45,72 @@
             </li>
         </ul>
     </div>
+    <div class="mob is-hidden">
+        <div class="container">
+            <div class="mob-top">
+                <button type="button" class="mob-close-btn">
+                    <svg class="mob-close-icon" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <nav class="mob-nav">
+    
+                    <ul class="mob-nav__list">
+                        <li class="mob-nav__item"><a class="mob-nav__link link current" href="./index.html">Студия</a></li>
+                        <li class="mob-nav__item"><a class="mob-nav__link link " href="./portfolio.html">Портфолио</a></li>
+                        <li class="mob-nav__item"><a class="mob-nav__link link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mob-bot">
+                <ul class="mob-contact__list">
+                    <li class="mob-contact__tel">
+                        <a class="mob-contact-link__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mob-contact__mail">
+                        <a class="mob-contact-link__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+    
+                </ul>
+                <ul class="mob-soc__list">
+                    <li class="mob-soc__item"><a href="" class="mob-soc-link link" target="_blank"
+                            rel="noopener noreferrer nofollow">Instagram</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc-link link" target="_blank"
+                            rel="noopener noreferrer nofollow">Twitter</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc-link link" target="_blank"
+                            rel="noopener noreferrer nofollow">Facebook</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc-link link" target="_blank"
+                            rel="noopener noreferrer nofollow">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </header>
     <main class="">
         <section class="portfolio">
             <div class="container">
-            <ul class="none-style btns-ulist" >
+            <ul class="btns-ulist" >
                 <li class="btns-list"><button type="button" class="filters-btn">Все</button></li>
                 <li class="btns-list"><button type="button" class="filters-btn">Веб-сайты</button></li>
                 <li class="btns-list"><button type="button" class="filters-btn">Приложения</button></li>
                 <li class="btns-list"><button type="button" class="filters-btn">Дизайн</button></li>
                 <li class="btns-list"><button type="button" class="filters-btn">Маркетинг</button></li>
             </ul>
-            <ul class="none-style tile " >
+            <ul class="tile " >
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/8.jpg" alt="ноутбук с открытым сайтом" width="370" height="294">
+                        <picture>
+                           
+                                <source srcset="./images/techno-desk-x1.jpg 1x,
+                                                                                ./images/techno-desk-x2.jpg 2x" media="(min-width:1200px)">
+                                <source srcset="./images/techno-tabl-x1.jpg 1x,
+                                                                                ./images/techno-tabl-x2.jpg 2x" media="(min-width:768px)">
+                                <source srcset="./images/techno-mob-x1.jpg 1x,
+                                                                                ./images/techno-mob-x2.jpg 2x" media="(min-width:480px)">
+                                <img class="tile-img" src="./images/techno-mob-x1.jpg" alt="ноутбук с открытым сайтом">
+                            
+                        </picture>
+                   
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
                     </div> 
@@ -65,7 +121,20 @@
                 </li>
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/9.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                    <picture>
+                    
+                        <source srcset="./images/poster-desk-x1.jpg 1x,
+                                                                                                    ./images/poster-desk-x2.jpg 2x"
+                            media="(min-width:1200px)">
+                        <source srcset="./images/poster-tabl-x1.jpg 1x,
+                                                                                                    ./images/poster-tabl-x2.jpg 2x"
+                            media="(min-width:768px)">
+                        <source srcset="./images/poster-mob-x1.jpg 1x,
+                                                                                                    ./images/poster-mob-x2.jpg 2x"
+                            media="(min-width:480px)">
+                        <img class="tile-img" src="./images/poster-mob-x1.jpg" alt="Постер New Orlean vs Golden Star ">
+                    
+                    </picture>
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -77,7 +146,21 @@
                 </li>
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/10.jpg" alt="логотип ресторана" width="370" height="294">
+                        <picture>
+                        
+                            <source srcset="./images/seafood-desk-x1.jpg 1x,
+                                                                                                        ./images/seafood-desk-x2.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/seafood-tabl-x1.jpg 1x,
+                                                                                                        ./images/seafood-tabl-x2.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/seafood-mob-x1.jpg 1x,
+                                                                                                        ./images/seafood-mob-x2.jpg 2x"
+                                media="(min-width:480px)">
+                            <img class="tile-img" src="./images/seafood-mob-x1.jpg" alt="логотип ресторана">
+                        
+                        </picture>
+                    
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -89,7 +172,21 @@
                 </li>
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/11.jpg" alt="наушники" width="370" height="294">
+                        <picture>
+                        
+                            <source srcset="./images/prime-desk-x1.jpg 1x,
+                                                                                                        ./images/prime-desk-x2.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/prime-tabl-x1.jpg 1x,
+                                                                                                        ./images/prime-tabl-x2.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/prime-mob-x1.jpg 1x,
+                                                                                                        ./images/prime-mob-x2.jpg 2x"
+                                media="(min-width:480px)">
+                            <img class="tile-img" src="./images/prime-mob-x1.jpg" alt="наушники">
+                        
+                        </picture>
+                    
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -101,7 +198,20 @@
                 </li>
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/12.jpg" alt="коробки" width="370" height="294">
+                    <picture>
+                    
+                        <source srcset="./images/boxes-desk-x1.jpg 1x,
+                                                                                                    ./images/boxes-desk-x2.jpg 2x"
+                            media="(min-width:1200px)">
+                        <source srcset="./images/boxes-tabl-x1.jpg 1x,
+                                                                                                    ./images/boxes-tabl-x2.jpg 2x"
+                            media="(min-width:768px)">
+                        <source srcset="./images/boxes-mob-x1.jpg 1x,
+                                                                                                    ./images/boxes-mob-x2.jpg 2x"
+                            media="(min-width:480px)">
+                        <img class="tile-img" src="./images/boxes-mob-x1.jpg" alt="коробки">
+                    
+                    </picture>
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -113,7 +223,21 @@
                 </li>
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/13.jpg" alt="монитор с картой мира" width="370" height="294">
+                        <picture>
+                        
+                            <source srcset="./images/inspiration-desk-x1.jpg 1x,
+                                                                                                        ./images/inspiration-desk-x2.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/inspiration-tabl-x1.jpg 1x,
+                                                                                                        ./images/inspiration-tabl-x2.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/inspiration-mob-x1.jpg 1x,
+                                                                                                        ./images/inspiration-mob-x2.jpg 2x"
+                                media="(min-width:480px)">
+                            <img class="tile-img" src="./images/inspiration-mob-x1.jpg" alt="монитор с картой мира">
+                        
+                        </picture>
+                    
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -125,7 +249,21 @@
                 </li>
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/14.jpg" alt="книга" width="370" height="294">
+                        <picture>
+                        
+                            <source srcset="./images/limited-desk-x1.jpg 1x,
+                                                                                                        ./images/limited-desk-x2.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/limited-tabl-x1.jpg 1x,
+                                                                                                        ./images/limited-tabl-x2.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/limited-mob-x1.jpg 1x,
+                                                                                                        ./images/limited-mob-x2.jpg 2x"
+                                media="(min-width:480px)">
+                            <img class="tile-img" src="./images/limited-mob-x1.jpg" alt="книга">
+                        
+                        </picture>
+                    
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -137,7 +275,21 @@
                 </li>
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/15.jpg" alt="бирка" width="370" height="294">
+                        <picture>
+                        
+                            <source srcset="./images/label-desk-x1.jpg 1x,
+                                                                                                        ./images/label-desk-x2.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/label-tabl-x1.jpg 1x,
+                                                                                                        ./images/label-tabl-x2.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/label-mob-x1.jpg 1x,
+                                                                                                        ./images/label-mob-x2.jpg 2x"
+                                media="(min-width:480px)">
+                            <img class="tile-img" src="./images/label-mob-x1.jpg" alt="бирка">
+                        
+                        </picture>
+                    
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -149,7 +301,21 @@
                 </li>
                 <li class="tile-list">
                     <div class="tile-top-wrap">
-                    <img class="tile-img" src="./images/16.jpg" alt="ноутбук с руками на нём" width="370" height="294">
+                        <picture>
+                        
+                            <source srcset="./images/business-desk-x1.jpg 1x,
+                                                                                                        ./images/business-desk-x2.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/business-tabl-x1.jpg 1x,
+                                                                                                        ./images/business-tabl-x2.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/business-mob-x1.jpg 1x,
+                                                                                                        ./images/business-mob-x2.jpg 2x"
+                                media="(min-width:480px)">
+                        <img class="tile-img" src="./images/business-mob-x1.jpg" alt="ноутбук с руками на нём">
+                        
+                        </picture>
+                    
                     <p class="tile-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
@@ -227,6 +393,6 @@
         </form>
     </div>
 </footer>
-
+<script src="./js/mob.js"></script>
 </body>
 </html>

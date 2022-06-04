@@ -19,6 +19,11 @@
     <div class="container">
         <a href="./index.html" class=" logo header__logo link"> 
             <span class="logo__span">Web</span>Studio</a>
+            <button type="button" class="mob-open-btn">
+                <svg class="menu-open-icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link link current" href="./index.html">Студия</a></li>
@@ -41,6 +46,46 @@
             </li>
         </ul>
     </div>
+    <div class="mob is-hidden">
+        <div class="container">
+    <div class="mob-top">
+        <button type="button" class="mob-close-btn">
+            <svg class="mob-close-icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+        </button>
+        <nav class="mob-nav">
+        
+            <ul class="mob-nav__list">
+                <li class="mob-nav__item"><a class="mob-nav__link link current" href="./index.html">Студия</a></li>
+                <li class="mob-nav__item"><a class="mob-nav__link link " href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-nav__item"><a class="mob-nav__link link" href="">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="mob-bot">
+            <ul class="mob-contact__list">
+                <li class="mob-contact__tel">
+                    <a class="mob-contact-link__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-contact__mail">
+                    <a class="mob-contact-link__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            
+            </ul>
+            <ul class="mob-soc__list">
+                <li class="mob-soc__item"><a href="" class="mob-soc-link link" target="_blank"
+                        rel="noopener noreferrer nofollow">Instagram</a></li>
+                <li class="mob-soc__item"><a href="" class="mob-soc-link link" target="_blank"
+                        rel="noopener noreferrer nofollow">Twitter</a></li>
+                <li class="mob-soc__item"><a href="" class="mob-soc-link link" target="_blank"
+                        rel="noopener noreferrer nofollow">Facebook</a></li>
+                <li class="mob-soc__item"><a href="" class="mob-soc-link link" target="_blank"
+                        rel="noopener noreferrer nofollow">LinkedIn</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
 </header>
   <main>
     <section class="section-hero">
@@ -51,8 +96,8 @@
     </section>
     <section class="features">
         <div class="container">
-        <ul class=" features-block" >
-            <li class="features-list">
+        <ul class=" features-list" >
+            <li class="features-item">
                 <div class="features-icon-container">
                     <svg class="features-icons" width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
@@ -61,7 +106,7 @@
             <h3 class="features-title">Внимание к деталям</h3>
             <p class="features-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="features-list">
+            <li class="features-item">
                 <div class="features-icon-container">
                     <svg class="features-icons" width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-clock-1"></use>
@@ -70,7 +115,7 @@
                 <h3 class="features-title">Пунктуальность</h3>
                 <p class="features-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="features-list">
+            <li class="features-item">
                 <div class="features-icon-container">
                     <svg class="features-icons" width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
@@ -79,7 +124,7 @@
                 <h3 class="features-title">Планирование</h3>
                 <p class="features-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="features-list">
+            <li class="features-item">
                 <div class="features-icon-container">
                     <svg class="features-icons" width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
@@ -97,19 +142,27 @@
         <ul class=" what-we-do-block">
             <li class="what-we-do-img">
                 <div class="wwd-bot-container">
-                    <img src="./images/1.jpg" alt="руки на клавиатуре" width="370" height="294">
+                    <source srcset="./images/desk-photo-x1.jpg 1x,
+                                    ./images/desk-photo-x2.jpg 2x" media="(min-width:1200px)">
+                        <img class="" src="./images/desk-photo-x1.jpg" alt="Десктопные приложения">
+                    </picture>
                 <p class="wwd-bot-text">Десктопные приложения</p>
                 </div>
             </li>
             <li class="what-we-do-img">
                 <div class="wwd-bot-container">
-                    <img src="./images/2.jpg" alt="руки держат телефон" width="370" height="294">
+                     <source srcset="./images/mob-photo-x1.jpg 1x,
+                                     ./images/mob-photo-x2.jpg 2x" media="(min-width:1200px)">
+                    <img src="./images/mob-photo-x1.jpg" alt="руки держат телефон">
                 <p class="wwd-bot-text">Мобильные приложения</p>
                 </div>
             </li>
             <li class="what-we-do-img">
                 <div class="wwd-bot-container">
-                    <img src="./images/3.jpg" alt="руки держат планшет" width="370" height="294">
+                    <source srcset="./images/tabl-photo-x1.jpg 1x,
+                                    ./images/tabl-photo-x2.jpg 2x" media="(min-width:1200px)">
+                    <img src="./images/tabl-photo-x1.jpg" alt="руки держат планшет">
+                   
                 <p class="wwd-bot-text">Дизайнерские решения</p>
                 </div>
             </li>
@@ -117,11 +170,20 @@
         </div>
     </section>
     <section class="section-team">
-        <div class="container ">
+        <div class="container">
         <h2 class="team">Наша команда</h2>
-        <ul class="  card-list">
+        <ul class="card-list">
             <li class="card">
-                <img class="card-photo" src="./images/4.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                <picture>
+                    <source srcset="./images/igor-desk-x1.jpg 1x,
+                                    ./images/igor-desk-x2.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/igor-tabl-x1.jpg 1x,
+                                    ./images/igor-tabl-x2.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/igor-mob-x1.jpg 1x,
+                                    ./images/igor-mob-x2.jpg 2x" >
+                    <img class="card-photo" src="./images/igor-mob-x1.jpg.jpg" alt="Игорь Демьяненко">
+                </picture>
+                
                 <div class="description">
                     <h3 class="name">Игорь Демьяненко</h3>
                     <p class="position">Product Designer</p>
@@ -159,7 +221,15 @@
                 </div> 
             </li>
             <li class="card">
-                <img class="card-photo" src="./images/5.jpg" alt="Ольга Репина" width="270" height="260">
+                <picture>
+                    <source srcset="./images/olga-desk-x1.jpg 1x,
+                                    ./images/olga-desk-x2.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/olga-tabl-x1.jpg 1x,
+                                    ./images/olga-tabl-x2.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/olga-mob-x1.jpg 1x,
+                                    ./images/olga-mob-x2.jpg 2x" media="(min-width:480px)">
+                    <img class="card-photo" src="./images/olga-desk-x1.jpg" alt="Ольга Репина">
+                </picture>
                 <div class="description">
                     <h3 class="name">Ольга Репина</h3>
                     <p class="position">Frontend Developer</p>
@@ -198,7 +268,15 @@
                 </div>
             </li>
             <li class="card">
-                <img class="card-photo" src="./images/6.jpg" alt="Николай Тарасов" width="270" height="260">
+                <picture>
+                    <source srcset="./images/nicolai-desk-x1.jpg 1x,
+                                    ./images/nicolai-desk-x2.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/nicolai-tabl-x1.jpg 1x,
+                                    ./images/nicolai-tabl-x2.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/nicolai-mob-x1.jpg 1x,
+                                    ./images/nicolai-mob-x2.jpg 2x" media="(min-width:480px)">
+                    <img class="card-photo" src="./images/nicolai-mob-x1.jpg" alt="Николай Тарсаов">
+                </picture>
                 <div class="description">
                     <h3 class="name">Николай Тарасов</h3>
                     <p class="position">Marketing</p>
@@ -237,7 +315,15 @@
                 </div>
             </li>
             <li class="card">
-                <img class="card-photo" src="./images/7.jpg" alt="Михаил Ермаков" width="270" height="260">
+                <picture>
+                    <source srcset="./images/mihail-desk-x1.jpg 1x,
+                                    ./images/mihail-desk-x2.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/mihail-tabl-x1.jpg 1x,
+                                    ./images/mihail-tabl-x2.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/mihail-mob-x1.jpg 1x,
+                                    ./images/mihail-mob-x2.jpg 2x" media="(min-width:480px)">
+                    <img class="card-photo" src="./images/mihail-mob-x1.jpg" alt="Михаил Ермаков">
+                </picture>
                 <div class="description">
                     <h3 class="name">Михаил Ермаков</h3>
                 <p class="position">UI Designer</p>
@@ -283,42 +369,42 @@
                 Постоянные клиенты
             </h2>
             <ul class="clients-list">
-                <li class="clients-lists">
+                <li class="clients-item">
                     <a href="" class="clients-a">
                         <svg class="clients-icons" width="106" height="60">
                             <use href="./images/symbol-defs.svg#icon-Logo"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-lists">
+                <li class="clients-item">
                     <a href="" class="clients-a">
                         <svg class="clients-icons" width="106" height="60">
                             <use href="./images/symbol-defs.svg#icon-Logo-1"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-lists">
+                <li class="clients-item">
                     <a href=""class="clients-a">
                         <svg class="clients-icons" width="106" height="60">
                             <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-lists">
+                <li class="clients-item">
                     <a href=""class="clients-a">
                         <svg class="clients-icons" width="106" height="60">
                             <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-lists">
+                <li class="clients-item">
                     <a href="" class="clients-a">
                         <svg class="clients-icons" width="106" height="60">
                             <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-lists">
+                <li class="clients-item">
                     <a href="" class="clients-a">
                         <svg class="clients-icons" width="106" height="60">
                             <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
@@ -377,7 +463,7 @@
         </ul>
     </div>
    <form class="distribution">
-        <div class="">
+        <div class="distribution-container">
             <label for="distribution__input" class="distribution__label">Подпишитесь на рассылку</label>
             <div class="distribution__field">
                 <input type="email" class="distribution__input" id="input-distrib" name="input-distrib" placeholder="E-mail">
@@ -442,10 +528,13 @@
                     
                 </label>
              </div>
-        <button type="submit" class="modal-subm-btn">Отправить</button>
-       
+             <div class="subm-btn">
+                        <button type="submit" class="modal-subm-btn">Отправить</button>
+
+             </div>
     </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/mob.js"></script>
 </body>
 </html>

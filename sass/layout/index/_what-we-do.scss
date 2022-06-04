@@ -1,5 +1,10 @@
 .what-we-do {
     padding-bottom: 94px;
+    display: none;
+    
+        @media screen and (min-width:1200px) {
+            display: block;
+        }
 }
 
 .what-we-do-title {
@@ -13,8 +18,10 @@
 }
 
 .what-we-do-block {
-    display: flex;
-    justify-content: center;
+        @media screen and (min-width:1200px) {
+            display: flex;
+            justify-content: center;
+        }
 }
 
 .wwd-bot-container {
