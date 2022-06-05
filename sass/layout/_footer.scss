@@ -18,6 +18,11 @@
     margin: 0 auto;
     @media screen and  (min-width:768px){
         margin-left: 76px;  
+        margin-right: 165px;
+       display: flex;
+      
+       align-self: flex-start;
+       flex-direction: column;
     }
     @media screen and  (min-width:1200px){
     text-align: left;
@@ -83,10 +88,16 @@
     margin:  60px auto 60px auto; 
     text-align: center;
     @media screen and (min-width:768px) {
+        display: flex;
+        align-self: flex-end;
+        flex-direction: column;
+        
         position:absolute;
-            margin: 0;
+       
+        margin: 0;
             margin-top: 5px;
-            right: 89px;
+            
+            
         }
         @media screen and  (min-width:1200px){
             position: static;
@@ -103,7 +114,8 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    
+    height: fit-content;
     color: #FFFFFF;
 }
 
