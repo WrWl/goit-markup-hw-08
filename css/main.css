@@ -163,10 +163,7 @@
   transition-delay: 0;
 }
 
-.header-contact__links:hover > .contact__icons {
-  fill: var(--hover-focus-color);
-}
-.header-contact__links:focus > .Contact__icons {
+.header-contact__links:hover > .contact__icons, .header-contact__links:focus > .contact__icons {
   fill: var(--hover-focus-color);
 }
 
@@ -386,6 +383,7 @@
 @media screen and (min-width: 1200px) {
   .footer__social {
     position: static;
+    align-self: flex-start;
     margin-top: 12px;
     margin-left: 70px;
     text-align: left;

@@ -179,14 +179,8 @@
 }
 
 .header-contact__links {
-    &:hover {
+    &:hover, &:focus {
         >.contact__icons {
-            fill: var(--hover-focus-color);
-        }
-    }
-
-    &:focus {
-        >.Contact__icons {
             fill: var(--hover-focus-color);
         }
     }
